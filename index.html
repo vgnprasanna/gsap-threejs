@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Multiple GLBs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sections for each GLB -->
+    <div id="container">
+        <div class="model-section model-section-1" data-model="models/weapon_2.glb" data-rotate="90" data-bgcolor="#8A2D3B">
+            <div class="weapon-name">Assault Rifle M16</div>
+            <div class="weapon-desc">The ARX-9 is a modern, modular assault rifle engineered for versatility and performance in diverse combat environments. Designed with precision, low recoil, and tactical adaptability, it delivers reliable firepower for both close-quarters and mid-range engagements.</div>
+            <ul class="spec-list">
+                <li><span>Caliber</span> : 5.56x45mm NATO</li>
+                <li><span>Action</span> : Gas-operated, rotating bolt</li>
+                <li><span>Rate of Fire</span> : 700-950 rounds per minute</li>
+                <li><span>Effective Range</span> : 500 meters</li>
+                <li><span>Barrel Length</span> : 14.5 inches (368 mm)</li>
+                <li><span>Overall Length</span> : 33 inches (838 mm)</li>
+            </ul>
+            <div class="bg-color"></div>
+        </div>
+        <div class="model-section model-section-2" data-model="models/weapon_3.glb" data-rotate="0" data-bgcolor="#641B2E">
+            <div class="weapon-name">AWM Sniper</div>
+            <div class="weapon-desc">The ARX-9 is a modern, modular assault rifle engineered for versatility and performance in diverse combat environments. Designed with precision, low recoil, and tactical adaptability, it delivers reliable firepower for both close-quarters and mid-range engagements.</div>
+            <ul class="spec-list">
+                <li><span>Caliber</span> : 5.56x45mm NATO</li>
+                <li><span>Action</span> : Gas-operated, rotating bolt</li>
+                <li><span>Rate of Fire</span> : 700-950 rounds per minute</li>
+                <li><span>Effective Range</span> : 500 meters</li>
+                <li><span>Barrel Length</span> : 14.5 inches (368 mm)</li>
+                <li><span>Overall Length</span> : 33 inches (838 mm)</li>
+            </ul>
+            <div class="bg-color"></div>
+        </div>
+        <div class="model-section model-section-3" data-model="models/weapon_4.glb" data-rotate="90" data-bgcolor="#BE5B50">
+            <div class="weapon-name">Assault Rifle M4A1</div>
+            <div class="weapon-desc">The ARX-9 is a modern, modular assault rifle engineered for versatility and performance in diverse combat environments. Designed with precision, low recoil, and tactical adaptability, it delivers reliable firepower for both close-quarters and mid-range engagements.</div>
+            <ul class="spec-list">
+                <li><span>Caliber</span> : 5.56x45mm NATO</li>
+                <li><span>Action</span> : Gas-operated, rotating bolt</li>
+                <li><span>Rate of Fire</span> : 700-950 rounds per minute</li>
+                <li><span>Effective Range</span> : 500 meters</li>
+                <li><span>Barrel Length</span> : 14.5 inches (368 mm)</li>
+                <li><span>Overall Length</span> : 33 inches (838 mm)</li>
+            </ul>
+            <div class="bg-color"></div>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+        }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="js/scripts.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.model-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.model-section-1{
+    background-color: #BE5B50;
+}
+
+.model-section-2{
+    background-color: #8A2D3B;
+}
+
+.model-section-3{
+    background-color: #641B2E;
+}
+
+canvas{
+    position: absolute;
+    z-index: 3;
+}
+
+.weapon-name{
+    font-weight: 700;
+    font-size: 160px;
+    line-height: 160px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.weapon-desc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #f2f2f2;
+    text-align: left;
+    position: absolute;
+    top: 240px;
+    left: 160px;
+    width: 600px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.spec-list{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    top: 240px;
+    right: 160px;
+    width: 600px;
+    z-index: 2;
+}
+
+.spec-list li{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.spec-list li span{
+    font-weight: 700;
+}
+
+.bg-color{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
